@@ -4,8 +4,7 @@ You need to have Gulp and PhantomJS globally installed for this to compile. Actu
 For now this readme will serve as an to-do list.
 ## To-do
 ### General
-- Fix buttons.sass and navigation.sass not compiling when settings.sass isn't included in the files itself
-  This issue also breaks the themes
+- Fix having to load in settings twice in pedestal.sass
 - Finish all empty element pages, including the main page
 - Drop-shadow mixin and settings
   While pedestal elements have no drop shadows by default, adding settings for all elements would make it much easier to add drop shadows in themes.
