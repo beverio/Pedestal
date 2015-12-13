@@ -30,8 +30,6 @@ For now this readme will serve as an to-do list.
 - Cards
 - Images
   - Thumbnails
-  - Responsive images
-  - Rounded/round images
 
 ### Utilities
 I'm not sure about adding these. 

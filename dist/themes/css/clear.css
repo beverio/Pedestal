@@ -723,6 +723,22 @@ pre {
   overflow: auto;
   white-space: pre-wrap; }
 
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+.img-wide {
+  display: block;
+  height: auto;
+  width: 100%; }
+
+.img-rounded {
+  border-radius: 5px; }
+
+.img-round {
+  border-radius: 50%; }
+
 /* Only increase this variable for debugging */
 [id*='menu-bar-toggle-'] {
   display: none; }
@@ -784,7 +800,7 @@ pre {
   .menu-bar.-small nav > ul > li > a {
     padding: 9.375px;
     margin-left: 5px; }
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     .menu-bar.-responsive nav {
       height: 0;
       overflow: hidden;
@@ -806,7 +822,7 @@ pre {
     .menu-bar.-inverse nav > ul > li > a.-active {
       color: #fff; }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   input[type="checkbox"]:checked + .menu-bar.-responsive {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -864,7 +880,7 @@ pre {
 .-hidden {
   display: none; }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .-sm-hidden {
     display: none; }
   .-sm-visible {
@@ -874,7 +890,7 @@ pre {
     display: -ms-flexbox;
     display: flex; } }
 
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .-lg-hidden {
     display: none; }
   .-lg-visible {

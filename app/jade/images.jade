@@ -35,6 +35,39 @@ html
           label#open-button(for="menu-bar-toggle-sub") All Elements
     .container
       h1 Images
+      .row-12.row-sm-6.row-lg-4
+        .col
+          .DOCS_example
+            img(src="https://unsplash.it/200/200").img-responsive
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <img src="image.jpg" class="img-responsive"/>
+        .col
+          .DOCS_example
+            img(src="https://unsplash.it/200/200").img-responsive.img-rounded
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <img src="image.jpg" class="img-responsive img-rounded"/>
+        .col
+          .DOCS_example
+            img(src="https://unsplash.it/200/200").img-responsive.img-round
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <img src="image.jpg" class="img-responsive img-round"/>
+        .col
+          .DOCS_example
+            img(src="https://unsplash.it/200/200").img-wide
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <img src="image.jpg" class="img-wide"/><
     include ./includes/footer.jade
 
 
