@@ -1,0 +1,18 @@
+.-hidden
+  display: none
+
+@media (min-width: $breakpoint-small)
+  .-sm-hidden
+    display: none
+  .-sm-visible
+    display: block
+  .row.-sm-visible, [class*='row-'].-sm-visible
+    display: flex
+
+@media (min-width: $breakpoint-large)
+  .-lg-hidden
+    display: none
+  .-lg-visible
+    display: block
+  .row.-lg-visible, [class*='row-'].-lg-visible
+    display: flex

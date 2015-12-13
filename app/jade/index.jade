@@ -1,0 +1,26 @@
+html
+  head
+    title Pedestal
+    include ./includes/head.jade
+  body
+    input#menu-bar-toggle-main(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top
+      .container
+        a(href="/").brand Pedestal
+        .right
+          nav
+            ul
+              li: a.-active(href="/") Home
+              li: a(href="/elements.html") Elements
+              li: a(href="/themes.html") Themes
+              li: a.button.-primary(href="/download.html") Download
+          label#open-button(for="menu-bar-toggle-main") Menu
+    .container.DOCS_home-container
+      .DOCS_home-content
+        h1 Pedestal
+        p CSS Only Responsive Framework
+        a(href='download.html').button.-primary Download now
+        |  
+        a(href='themes.html').button Themes
+
+

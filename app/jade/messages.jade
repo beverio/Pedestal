@@ -1,0 +1,70 @@
+html
+  head
+    title Pedestal
+    include ./includes/head.jade
+  body
+    input#menu-bar-toggle-main(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top
+      .container
+        a(href="/").brand Pedestal
+        .right
+          nav
+            ul
+              li: a(href="/") Home
+              li: a.-active(href="/elements.html") Elements
+              li: a(href="/themes.html") Themes
+              li: a.button.-primary(href="/download.html") Download
+          label#open-button(for="menu-bar-toggle-main") Menu
+    input#menu-bar-toggle-sub(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top.-small.-inverse
+      .container
+        .center
+          nav
+            ul
+              li: a(href="/elements.html") Overview
+              li: a(href="/typography.html") Typography
+              li: a(href="/grid.html") Grid
+              li: a(href="/buttons.html") Buttons
+              li: a(href="/navigation.html") Navigation
+              li: a(href="/forms.html") Forms
+              li: a.-active(href="/messages.html") Messages
+              li: a(href="/tables.html") Tables
+              li: a(href="/cards.html") Cards
+              li: a(href="/images.html") Images
+              li: a(href="/code.html") Code
+          label#open-button(for="menu-bar-toggle-sub") All Elements
+    .container
+      h1 Messages
+      h2 Default
+      .DOCS_example
+        .message Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="message">Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.</div>
+      h2 Primary
+      .DOCS_example
+        .message.-primary Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="message -primary">Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.</div>
+
+      h2 Secondary
+      .DOCS_example
+        .message.-secondary Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="message -secondary">Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.</div>
+
+    include ./includes/footer.jade
+
+
+
+
+
+

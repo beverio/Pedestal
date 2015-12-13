@@ -1,0 +1,104 @@
+@import '../_settings'
+@mixin button($bg, $border, $text, $bg-hover, $border-hover, $text-hover)
+  background: $bg
+  border-color: $border
+  color: $text
+  transition: ($button-transition-speed * $transition-multiplier)
+  &:hover:not(.-disabled)
+    background: $bg-hover
+    border-color: $border-hover
+    color: $text-hover
+    > .right
+      border-color: $border-hover
+
+  > .right
+    border-left: $button-border-size solid $border
+
+@mixin button-inverse($bg-hover, $border-hover, $text-hover, $bg, $border, $text)
+  background: $bg
+  border-color: $border
+  color: $text
+  transition: ($button-transition-speed * $transition-multiplier)
+  &:hover
+    background: $bg-hover
+    border-color: $border-hover
+    color: $text-hover
+    > .right 
+      border-color: $border-hover
+
+  > .right
+    border-left: $button-border-size solid $border
+
+
+.button
+  display: inline-block
+  border-radius: $border-radius
+  border: $button-border-size solid
+  padding: $button-padding
+  font-size: $button-font-size
+  text-decoration: none
+
+  > .right
+    float: right
+    font-weight: 700
+    border-left: $button-border-size solid
+    padding-left: ($text-spacing / 2)
+    margin-left: ($text-spacing / 2)
+    transition: border-color ($button-transition-speed * $transition-multiplier)
+
+  &.-disabled, &[disabled]
+    cursor: not-allowed
+    opacity: 0.5
+
+  a
+    &.disabled
+      pointer-events: none
+
+  @include button($button-default-bg, $button-default-border, $button-default-text, $button-default-bg-hover, $button-default-border-hover, $button-default-text-hover)
+
+  &.-primary
+    @include button($button-primary-bg, $button-primary-border, $button-primary-text, $button-primary-bg-hover, $button-primary-border-hover, $button-primary-text-hover)
+
+  &.-secondary
+    @include button($button-secondary-bg, $button-secondary-border, $button-secondary-text, $button-secondary-bg-hover, $button-secondary-border-hover, $button-secondary-text-hover)
+
+  &.-wide
+    width: 100%
+    text-align: center
+
+  &.-small
+    padding: $button-small-padding
+    font-size: $button-small-font-size
+
+  &.-inverse
+    @include button($button-default-bg, $button-default-border, $button-default-text, $button-default-bg-hover, $button-default-border-hover, $button-default-text-hover)
+
+    &.-primary
+      @include button($button-primary-bg, $button-primary-border, $button-primary-text, $button-primary-bg-hover, $button-primary-border-hover, $button-primary-text-hover)
+
+    &.-secondary
+      @include button($button-secondary-bg, $button-secondary-border, $button-secondary-text, $button-secondary-bg-hover, $button-secondary-border-hover, $button-secondary-text-hover)
+
+
+.button-group
+  > .button:not(:first-child):not(:last-child)
+    border-radius: 0
+    border-right: 0px
+    &.-full
+      border-left: $button-border-size solid rgba(255,255,255,0.5)
+      &:hover
+        border-color: inherit
+  > .button:first-child:not(:last-child) 
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+    border-right: 0px
+  > .button:last-child:not(:first-child) 
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+
+  &.-wide
+    display: flex
+    flex-wrap: wrap
+    > .button
+      text-align: center
+      flex: 1

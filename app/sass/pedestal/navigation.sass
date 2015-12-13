@@ -1,0 +1,128 @@
+@import '../_settings'
+// Menu bar
+[id*='menu-bar-toggle-'] 
+  display: none
+
+.menu-bar
+  display: flex
+  width: 100%
+  padding: 0 $menu-bar-padding-hor
+  border: $menu-bar-border-size solid $menu-bar-border-color
+  border-radius: $menu-bar-border-radius
+  background: $menu-bar-background
+  color: $menu-bar-color
+  .container
+    display: flex
+  .right
+    margin-left: auto
+  .center
+    margin-left: auto
+    margin-right: auto
+  .brand
+    display: inline-block
+    padding: $menu-bar-brand-padding
+    margin: $menu-bar-brand-margin
+    border-radius: $menu-bar-brand-border-radius
+    background: $menu-bar-brand-background
+    font-weight: $menu-bar-brand-weight
+    color: $menu-bar-brand-color
+    &:hover
+      color: $menu-bar-brand-color-hover
+  #open-button
+    display: none
+    float: right
+    padding: $menu-bar-padding-vert 0
+
+  nav > ul
+    padding: 0
+    list-style: none
+    > li
+      display: inline-block
+      > a 
+        display: inline-block
+        padding: $menu-bar-padding-vert 0
+        margin-left: $menu-bar-padding-hor
+        color: $menu-bar-color
+        &:hover
+          color: $menu-bar-color-hover
+        &.-active
+          color: $menu-bar-color-active
+
+  .button
+    padding: $menu-bar-button-padding
+
+  &.-top
+    border: none
+    border-radius: 0
+    border-bottom: $menu-bar-border-size solid $menu-bar-border-color
+    padding: 0
+
+  &.-small
+    nav > ul > li > a
+      padding: $menu-bar-padding-vert-small
+      margin-left: $menu-bar-padding-hor-small
+
+  &.-responsive
+    @media (max-width: $breakpoint-small)
+      nav
+        height: 0
+        overflow: hidden
+        width: 100%
+        ul
+          padding: 0
+          li
+            display: block
+            a
+              margin: 0
+      #open-button
+        display: block
+
+  &.-inverse
+    background: $menu-bar-background-inverse
+    color: $menu-bar-color-inverse
+    border-color: $menu-bar-border-color-inverse
+    nav > ul > li > a
+      &:hover
+        color: $menu-bar-color-hover-inverse
+      &.-active
+        color: $menu-bar-color-active-inverse
+
+
+@media (max-width: $breakpoint-small)
+  input[type="checkbox"]:checked + .menu-bar.-responsive
+    flex-direction: column
+    .container
+      flex-direction: column
+    nav
+      height: initial
+    .right, .center
+      margin: 0
+    .brand
+      border-bottom: $menu-bar-border-size solid $menu-bar-border-color
+    
+
+
+// Menu list
+.menu-list
+  ul
+    padding: 0
+    li
+      list-style: none
+      a
+        display: block
+        padding: $menu-list-padding
+        border: $menu-list-border-size solid $menu-list-border-color
+        color: $menu-list-color
+        &:hover
+          background: $menu-list-background-hover
+          border-color: $menu-list-border-color-hover
+          color: $menu-list-color-hover
+      &:first-child
+        a
+          border-radius: $menu-list-border-radius $menu-list-border-radius 0 0
+      &:last-child
+        a
+          border-radius: 0 0 $menu-list-border-radius $menu-list-border-radius
+      &:not(:first-child)
+        a
+          border-top: none

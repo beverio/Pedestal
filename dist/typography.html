@@ -1,0 +1,186 @@
+
+<html>
+  <head>
+    <title>Pedestal</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/pedestal.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    <input id="menu-bar-toggle-main" type="checkbox" name="open-input"/>
+    <div class="menu-bar -responsive -top">
+      <div class="container"><a href="/" class="brand">Pedestal</a>
+        <div class="right">
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/elements.html" class="-active">Elements</a></li>
+              <li><a href="/themes.html">Themes</a></li>
+              <li><a href="/download.html" class="button -primary">Download</a></li>
+            </ul>
+          </nav>
+          <label id="open-button" for="menu-bar-toggle-main">Menu</label>
+        </div>
+      </div>
+    </div>
+    <input id="menu-bar-toggle-sub" type="checkbox" name="open-input"/>
+    <div class="menu-bar -responsive -top -small -inverse">
+      <div class="container">
+        <div class="center">
+          <nav>
+            <ul>
+              <li><a href="/elements.html">Overview</a></li>
+              <li><a href="/typography.html" class="-active">Typography</a></li>
+              <li><a href="/grid.html">Grid</a></li>
+              <li><a href="/buttons.html">Buttons</a></li>
+              <li><a href="/navigation.html">Navigation</a></li>
+              <li><a href="/forms.html">Forms</a></li>
+              <li><a href="/messages.html">Messages</a></li>
+              <li><a href="/tables.html">Tables</a></li>
+              <li><a href="/cards.html">Cards</a></li>
+              <li><a href="/images.html">Images</a></li>
+              <li><a href="/code.html">Code</a></li>
+            </ul>
+          </nav>
+          <label id="open-button" for="menu-bar-toggle-sub">Submenu</label>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Typography</h1>
+      <div class="row-12 row-sm-6">
+        <div class="col">
+          <h2>Headings</h2>
+          <div class="DOCS_example">
+            <h1>Heading 1</h1>
+            <div class="DOCS_seperator"></div>
+            <h2>Heading 2</h2>
+            <div class="DOCS_seperator"></div>
+            <h3>Heading 3</h3>
+            <div class="DOCS_seperator"></div>
+            <h4>Heading 4</h4>
+            <div class="DOCS_seperator"></div>
+            <h5>Heading 5</h5>
+            <div class="DOCS_seperator"></div>
+            <h6>Heading 6</h6>
+          </div>
+          <div class="DOCS_code">
+            <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+          </div>
+        </div>
+        <div class="col">
+          <h2>Paragraphs</h2>
+          <div class="DOCS_example">
+            <p>Pellentesque odio odio, vestibulum <a href="">hendrerit diam</a> id, laoreet tempus purus. Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.</p>
+            <div class="DOCS_seperator"></div>
+            <p class="-text-center">Pellentesque odio odio, vestibulum <a href="">hendrerit diam</a> id, laoreet tempus purus. Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.</p>
+            <div class="DOCS_seperator"></div>
+            <p class="-text-right">Pellentesque odio odio, vestibulum <a href="">hendrerit diam</a> id, laoreet tempus purus. Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.</p>
+            <div class="DOCS_seperator"></div>
+            <p class="-text-justify">Pellentesque odio odio, vestibulum <a href="">hendrerit diam</a> id, laoreet tempus purus. Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.</p>
+          </div>
+          <div class="DOCS_code">
+            <pre><code>&lt;p&gt;Paragraph content&lt;/p&gt;
+&lt;p class=&quot;-text-center&quot;&gt;Paragraph content&lt;/p&gt;
+&lt;p class=&quot;-text-right&quot;&gt;Paragraph content&lt;/p&gt;
+&lt;p class=&quot;-text-justify&quot;&gt;Paragraph content&lt;/p&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      <h2>Lists</h2>
+      <div class="row">
+        <div class="col">
+          <h3>Ordered list</h3>
+          <div class="DOCS_example">
+            <ol>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ol>
+          </div>
+          <div class="DOCS_code">
+            <pre><code>&lt;ol&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Unordered list</h3>
+          <div class="DOCS_example">
+            <ul>
+              <li>List item</li>
+              <li>List item
+                <ul>
+                  <li>List item</li>
+                  <li>List item</li>
+                  <li>List item</li>
+                </ul>
+              </li>
+              <li>List item</li>
+            </ul>
+          </div>
+          <div class="DOCS_code">
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item
+    &lt;ul&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Unstyled list</h3>
+          <div class="DOCS_example">
+            <ol class="-unstyled">
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ol>
+          </div>
+          <div class="DOCS_code">
+            <pre><code>&lt;ol class=&quot;-unstyled&quot;&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Inline list</h3>
+          <div class="DOCS_example">
+            <ol class="-inline">
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ol>
+          </div>
+          <div class="DOCS_code">
+            <pre><code>&lt;ol class=&quot;-inline&quot;&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">Dit is een footer</div>
+    </footer>
+  </body>
+</html>

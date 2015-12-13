@@ -1,0 +1,87 @@
+body 
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif
+  color: $text-color
+  font-size: $font-size
+  line-height: $line-height
+  background: $body-background
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 
+  font-weight: $heading-weight
+  color: $heading-color
+  line-height: $heading-line-height
+  margin-bottom: ($text-spacing / 2)
+  margin-top: $text-spacing
+
+h1, .-text-1
+  font-size: $font-size-h1
+h2, .-text-2
+  font-size: $font-size-h2
+h3, .-text-3
+  font-size: $font-size-h3
+h4, .-text-4
+  font-size: $font-size-h4
+h5, .-text-5
+  font-size: $font-size-h5
+h6, .-text-6
+  font-size: $font-size-h6
+
+small,
+._small 
+  font-size: $font-size-small
+
+p
+  margin: 0 0 ($text-spacing / 2)
+  
+a
+  text-decoration: none
+  color: $link-color
+  &:hover
+    color: $link-color-hover
+
+.lead
+  font-size: $font-size-lead
+  line-height: $line-height-lead
+  font-weight: 300
+
+ul, ol
+  padding: 0 0 0 20px
+
+  &.-unstyled
+    padding: 0
+    list-style: none
+
+  &.-inline
+    padding: 0
+    > li
+      display: inline-block
+
+// Colored text
+
+.text-primary
+  color: $primary
+
+.text-secondary
+  color: $secondary
+
+// Text helpers
+._strong, ._bold
+  font-weight: bold
+
+._italic
+  font-style: italic
+
+._regular
+  font-weight: regular
+
+._text-center
+  text-align: center
+
+._text-right
+  text-align: right
+
+._text-justify
+  text-align: justify
+
+._uppercase
+  text-transform: uppercase

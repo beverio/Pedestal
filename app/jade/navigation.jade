@@ -1,0 +1,248 @@
+html
+  head
+    title Pedestal
+    include ./includes/head.jade
+  body
+    input#menu-bar-toggle-main(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top
+      .container
+        a(href="/").brand Pedestal
+        .right
+          nav
+            ul
+              li: a(href="/") Home
+              li: a.-active(href="/elements.html") Elements
+              li: a(href="/themes.html") Themes
+              li: a.button.-primary(href="/download.html") Download
+          label#open-button(for="menu-bar-toggle-main") Menu
+    input#menu-bar-toggle-sub(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top.-small.-inverse
+      .container
+        .center
+          nav
+            ul
+              li: a(href="/elements.html") Overview
+              li: a(href="/typography.html") Typography
+              li: a(href="/grid.html") Grid
+              li: a(href="/buttons.html") Buttons
+              li: a.-active(href="/navigation.html") Navigation
+              li: a(href="/forms.html") Forms
+              li: a(href="/messages.html") Messages
+              li: a(href="/tables.html") Tables
+              li: a(href="/cards.html") Cards
+              li: a(href="/images.html") Images
+              li: a(href="/code.html") Code
+          label#open-button(for="menu-bar-toggle-sub") All Elements
+    .container
+      h1 Navigation
+      h2 Menu bar
+      .DOCS_example
+        .menu-bar
+          nav
+            ul
+              li: a.-active(href="#") Home
+              li: a(href="#") Typography
+              li: a(href="#") Grid
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="menu-bar">
+                <a href="" class="brand">Pedestal</a>
+                <div class="right">
+                  <nav>
+                    <ul>
+                      <li><a href="#" class="-active">Home</a></li>
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Grid</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+      h3 Menu bar  on top
+      .DOCS_example
+        .menu-bar.-top
+          nav
+            ul
+              li: a.-active(href="#") Home
+              li: a(href="#") Typography
+              li: a(href="#") Grid
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="menu-bar -top">
+                <a href="" class="brand">Pedestal</a>
+                <div class="right">
+                  <nav>
+                    <ul>
+                      <li><a href="#" class="-active">Home</a></li>
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Grid</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+      h3 Small menu bar
+      .DOCS_example
+        .menu-bar.-small
+          nav
+            ul
+              li: a.-active(href="#") Home
+              li: a(href="#") Typography
+              li: a(href="#") Grid
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="menu-bar -small">
+                <a href="" class="brand">Pedestal</a>
+                <div class="right">
+                  <nav>
+                    <ul>
+                      <li><a href="#" class="-active">Home</a></li>
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Grid</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+      h3 Inverse menu bar
+      .DOCS_example
+        .menu-bar.-inverse
+          nav
+            ul
+              li: a.-active(href="#") Home
+              li: a(href="#") Typography
+              li: a(href="#") Grid
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="menu-bar -inverse">
+                <a href="" class="brand">Pedestal</a>
+                <div class="right">
+                  <nav>
+                    <ul>
+                      <li><a href="#" class="-active">Home</a></li>
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Grid</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+      h3 Menu bar with brand, aligned right
+      .DOCS_example
+        .menu-bar
+          a(href="").brand Pedestal
+          .right
+            nav
+              ul
+                li: a.-active(href="#") Home
+                li: a(href="#") Typography
+                li: a(href="#") Grid
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="menu-bar">
+                <a href="" class="brand">Pedestal</a>
+                <div class="right">
+                  <nav>
+                    <ul>
+                      <li><a href="#" class="-active">Home</a></li>
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Grid</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+      h3 Menu bar with centered menu
+      .DOCS_example
+        .menu-bar
+          .center
+            nav
+              ul
+                li: a.-active(href="#") Home
+                li: a(href="#") Typography
+                li: a(href="#") Grid
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="menu-bar">
+                <div class="center">
+                  <nav>
+                    <ul>
+                      <li><a href="#" class="-active">Home</a></li>
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Grid</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+      h3 Responsive menu bar
+      .DOCS_example
+        input#menu-bar-toggle-demo(type="checkbox" name="open-input")
+        .menu-bar.-responsive
+          a(href="").brand Pedestal
+          .right
+            nav
+              ul
+                li: a.-active(href="#") Home
+                li: a(href="#") Typography
+                li: a(href="#") Grid
+                li: a(href="#") Buttons
+                li: a(href="#") Navigation
+            label#open-button(for="menu-bar-toggle-demo") Menu
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <input id="menu-toggle-demo" type="checkbox" name="open-input"/>
+              <div class="menu-bar -responsive">
+                <a href="" class="brand">Pedestal</a>
+                <div class="right">
+                  <nav>
+                    <ul>
+                      <li><a href="#" class="-active">Home</a></li>
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Grid</a></li>
+                      <li><a href="#">Buttons</a></li>
+                      <li><a href="#">Navigation</a></li>
+                      <li><a href="#" class="button -primary -full">Download</a></li>
+                    </ul>
+                  </nav>
+                  <label id="open-button" for="menu-toggle-demo">Menu</label>
+                </div>
+              </div>
+      .row-12.row-sm-6.row-lg-4
+        .col
+          h2 Menu list
+          .DOCS_example
+            .menu-list
+              ul
+                li: a(href="") Item
+                li: a(href="") Item
+                li: a(href="") Item
+                li: a(href="") Item
+                li: a(href="") Item
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <div class="menu-list">
+                    <ul>
+                      <li><a href="">Item</a></li>
+                      <li><a href="">Item</a></li>
+                      <li><a href="">Item</a></li>
+                      <li><a href="">Item</a></li>
+                      <li><a href="">Item</a></li>
+                    </ul>
+                  </div>
+    include ./includes/footer.jade
+
+
+
+
+

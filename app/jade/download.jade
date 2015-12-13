@@ -1,0 +1,52 @@
+html
+  head
+    title Pedestal
+    include ./includes/head.jade
+  body
+    input#menu-bar-toggle-main(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top
+      .container
+        a(href="").brand Pedestal
+        .right
+          nav
+            ul
+              li: a(href="/") Home
+              li: a(href="/elements.html") Elements
+              li: a(href="/themes.html") Themes
+              li: a.button.-primary.-active(href="/download.html") Download
+          label#open-button(for="menu-bar-toggle-main") Menu
+    .container
+      h1 Downloads
+      .row
+        .col-12.col-lg-4
+          h2 Source files
+          .row-12.row-sm-6.row-lg-12
+            .col
+              h3 Sass Source
+              a.button.-primary.-wide sass.zip
+            .col
+              h3 Complete source
+              a.button.-primary.-wide View on Github
+        .col-12.col-lg-8
+          h2 Compiled
+          .row-12.row-sm-6
+            .col
+              h3 Pedestal
+              .row
+                .col
+                  a.button.-primary.-wide pedestal.css
+                .col
+                  a.button.-primary.-wide  minified css
+              a.button.-primary.-wide pedestal.zip (both)
+            .col
+              h3 Grid
+              .row
+                .col
+                  a.button.-primary.-wide grid.css
+                .col
+                  a.button.-primary.-wide minified css
+              a.button.-primary.-wide grid.zip (both)
+    include ./includes/footer.jade
+
+
+

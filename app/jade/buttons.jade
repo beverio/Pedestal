@@ -1,0 +1,115 @@
+html
+  head
+    title Pedestal
+    include ./includes/head.jade
+  body
+    input#menu-bar-toggle-main(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top
+      .container
+        a(href="/").brand Pedestal
+        .right
+          nav
+            ul
+              li: a(href="/") Home
+              li: a.-active(href="/elements.html") Elements
+              li: a(href="/themes.html") Themes
+              li: a.button.-primary(href="/download.html") Download
+          label#open-button(for="menu-bar-toggle-main") Menu
+    input#menu-bar-toggle-sub(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top.-small.-inverse
+      .container
+        .center
+          nav
+            ul
+              li: a(href="/elements.html") Overview
+              li: a(href="/typography.html") Typography
+              li: a(href="/grid.html") Grid
+              li: a.-active(href="/buttons.html") Buttons
+              li: a(href="/navigation.html") Navigation
+              li: a(href="/forms.html") Forms
+              li: a(href="/messages.html") Messages
+              li: a(href="/tables.html") Tables
+              li: a(href="/cards.html") Cards
+              li: a(href="/images.html") Images
+              li: a(href="/code.html") Code
+          label#open-button(for="menu-bar-toggle-sub") All Elements
+    .container
+      h1 Buttons
+      .DOCS_example
+        .row
+          .col
+            a(href="").button Default button
+          .col
+            a(href="").button.-primary Primary button
+          .col
+            a(href="").button.-secondary Secondary button
+      .DOCS_code
+      h2 Small buttons
+      .DOCS_example
+        .row
+          .col
+            a(href="").button.-small Default button
+          .col
+            a(href="").button.-primary.-small Primary button
+          .col
+            a(href="").button.-secondary.-small Secondary button
+      .DOCS_code
+      h2 Disabled buttons
+      .DOCS_example
+        .row
+          .col
+            a(href="").button.-disabled Default button
+          .col
+            a(href="" disabled="disabled").button.-primary Primary button
+          .col
+            a(href="").button.-secondary.-disabled Secondary button
+      .DOCS_code
+      h2 Wide buttons
+      .DOCS_example
+        a(href="").button.-secondary.-wide Wide secondary button
+      .DOCS_code
+
+      h2 Button group
+      .DOCS_example
+        .button-group
+          a(href="").button.-primary Primary button
+          a(href="").button.-primary Primary button
+          a(href="").button.-secondary Secondary button
+      .DOCS_code
+
+      h2 Justified button group
+      .DOCS_example
+        .button-group.-wide
+          a(href="").button.-primary Primary button
+          a(href="").button.-primary Primary button
+          a(href="").button.-secondary Secondary button
+      .DOCS_code
+
+      h2 Thing in button
+      .DOCS_example
+        .row
+          .col
+            a(href="").button.-primary Primary
+              .right $300
+          .col
+            a(href="").button.-secondary Secondary
+              .right Download now
+          .col
+            .button-group
+              a(href="").button Learn more
+              a(href="").button Buy now
+                .right $500
+      .DOCS_code
+
+      h2 Inversed buttons
+      .DOCS_example
+        .row
+          .col
+            a(href="").button.-inverse Default button
+          .col
+            a(href="").button.-inverse.-primary Primary button
+          .col
+            a(href="").button.-inverse.-secondary Secondary
+              .right Download now
+      .DOCS_code
+    include ./includes/footer.jade

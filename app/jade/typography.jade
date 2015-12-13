@@ -1,0 +1,170 @@
+html
+  head
+    title Pedestal
+    include ./includes/head.jade
+  body
+    input#menu-bar-toggle-main(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top
+      .container
+        a(href="/").brand Pedestal
+        .right
+          nav
+            ul
+              li: a(href="/") Home
+              li: a.-active(href="/elements.html") Elements
+              li: a(href="/themes.html") Themes
+              li: a.button.-primary(href="/download.html") Download
+          label#open-button(for="menu-bar-toggle-main") Menu
+    input#menu-bar-toggle-sub(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top.-small.-inverse
+      .container
+        .center
+          nav
+            ul
+              li: a(href="/elements.html") Overview
+              li: a.-active(href="/typography.html") Typography
+              li: a(href="/grid.html") Grid
+              li: a(href="/buttons.html") Buttons
+              li: a(href="/navigation.html") Navigation
+              li: a(href="/forms.html") Forms
+              li: a(href="/messages.html") Messages
+              li: a(href="/tables.html") Tables
+              li: a(href="/cards.html") Cards
+              li: a(href="/images.html") Images
+              li: a(href="/code.html") Code
+          label#open-button(for="menu-bar-toggle-sub") Submenu
+    .container
+      h1 Typography
+      .row-12.row-sm-6
+        .col
+          h2 Headings
+          .DOCS_example
+            h1 Heading 1
+            .DOCS_seperator
+            h2 Heading 2
+            .DOCS_seperator
+            h3 Heading 3
+            .DOCS_seperator
+            h4 Heading 4
+            .DOCS_seperator
+            h5 Heading 5
+            .DOCS_seperator
+            h6 Heading 6
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <h1>Heading 1</h1>
+                  <h2>Heading 2</h2>
+                  <h3>Heading 3</h3>
+                  <h4>Heading 4</h4>
+                  <h5>Heading 5</h5>
+                  <h6>Heading 6</h6>
+
+        .col
+          h2 Paragraphs
+          .DOCS_example
+            p Pellentesque odio odio, vestibulum 
+              a(href="") hendrerit diam
+              |  id, laoreet tempus purus. Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.
+            .DOCS_seperator
+            p.-text-center Pellentesque odio odio, vestibulum 
+              a(href="") hendrerit diam
+              |  id, laoreet tempus purus. Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.
+            .DOCS_seperator
+            p.-text-right Pellentesque odio odio, vestibulum 
+              a(href="") hendrerit diam
+              |  id, laoreet tempus purus. Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.
+            .DOCS_seperator
+            p.-text-justify Pellentesque odio odio, vestibulum 
+              a(href="") hendrerit diam
+              |  id, laoreet tempus purus. Mauris augue massa, mattis laoreet metus eget, placerat suscipit nulla.
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <p>Paragraph content</p>
+                  <p class="-text-center">Paragraph content</p>
+                  <p class="-text-right">Paragraph content</p>
+                  <p class="-text-justify">Paragraph content</p>
+      h2 Lists
+      .row
+        .col
+          h3 Ordered list
+          .DOCS_example
+            ol
+              li List item
+              li List item
+              li List item
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <ol>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                  </ol>
+        .col
+          h3 Unordered list
+          .DOCS_example
+            ul
+              li List item
+              li List item
+                ul
+                  li List item
+                  li List item
+                  li List item
+              li List item
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <ul>
+                    <li>List item</li>
+                    <li>List item
+                      <ul>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                      </ul>
+                    </li>
+                    <li>List item</li>
+                  </ul>
+        .col
+          h3 Unstyled list
+          .DOCS_example
+            ol.-unstyled
+              li List item
+              li List item
+              li List item
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <ol class="-unstyled">
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                  </ol>
+        .col
+          h3 Inline list
+          .DOCS_example
+            ol.-inline
+              li List item
+              li List item
+              li List item
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <ol class="-inline">
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                  </ol>
+    include ./includes/footer.jade
+
+
+
+

@@ -1,0 +1,380 @@
+mixin demo-cols(num)
+  - var n = 0;
+  while n < num
+    .col 
+      .DOCS_grid-info-box .col
+    - var n = n + 1;
+
+mixin vertical-demo-cols
+  .col 
+    .DOCS_grid-info-box .col
+  .col 
+    .DOCS_grid-info-box .col
+      p This column contains way more text than any of the other columns do. Because of that, this column is higher.
+  .col 
+    .DOCS_grid-info-box .col
+  .col 
+    .DOCS_grid-info-box .col
+      p This column contains a small amount of text.
+
+mixin vertical-demo-cols-code
+  pre
+    code
+      :escape-html
+        <div class="row -vert-align-end">
+          <div class="col">.col</div>
+          <div class="col">This column contains way more text than...</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+        </div>
+
+
+html
+  head
+    title Pedestal
+    include ./includes/head.jade
+  body
+    input#menu-bar-toggle-main(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top
+      .container
+        a(href="/").brand Pedestal
+        .right
+          nav
+            ul
+              li: a(href="/") Home
+              li: a.-active(href="/elements.html") Elements
+              li: a(href="/themes.html") Themes
+              li: a.button.-primary(href="/download.html") Download
+          label#open-button(for="menu-bar-toggle-main") Menu
+    input#menu-bar-toggle-sub(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top.-small.-inverse
+      .container
+        .center
+          nav
+            ul
+              li: a(href="/elements.html") Overview
+              li: a(href="/typography.html") Typography
+              li: a.-active(href="/grid.html") Grid
+              li: a(href="/buttons.html") Buttons
+              li: a(href="/navigation.html") Navigation
+              li: a(href="/forms.html") Forms
+              li: a(href="/messages.html") Messages
+              li: a(href="/tables.html") Tables
+              li: a(href="/cards.html") Cards
+              li: a(href="/images.html") Images
+              li: a(href="/code.html") Code
+          label#open-button(for="menu-bar-toggle-sub") All Elements
+    .container
+      h1 Grid
+      p.lead Pedestal includes a mobile-first responsive grid system based on flexbox. By default, the grid is divided up in twelfths. This means there are classes from .row-1 to .row-12, .col-1 to .col-12 and  .offset-1 to .offset-12. This amount can be changed by editing the $columns sass variable.
+      h2 Automatic column resizing
+      p When there is no number assigned to the rows or columns, the columns will automatically resize to fit on a single row.
+      .DOCS_example
+        strong .row
+        .row
+          +demo-cols(1)
+        .DOCS_seperator
+        strong .row
+        .row
+          +demo-cols(3)
+        .DOCS_seperator
+        strong .row
+        .row
+          +demo-cols(5)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row">
+                <div class="col">.col</div>
+              </div>
+              <div class="row">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+              <div class="row">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+      h2 Fixed column width per row
+      .DOCS_example
+        strong .row-6
+        .row-6
+          +demo-cols(3)
+        .DOCS_seperator
+        strong .row-4
+        .row-4
+          +demo-cols(3)
+        .DOCS_seperator
+        strong .row-3
+        .row-3
+          +demo-cols(3)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row-6">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+              <div class="row-4">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+              <div class="row-3">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+
+      h2 Individual fixed column width
+      .DOCS_example
+        strong .row
+        .row
+          .col-5
+            .DOCS_grid-info-box .col-5
+          +demo-cols(3)
+        .DOCS_seperator
+        strong .row
+        .row
+          +demo-cols(2)
+          .col-4
+            .DOCS_grid-info-box .col-4
+          +demo-cols(3)
+        .DOCS_seperator
+        strong .row
+        .row
+          .col-3
+            .DOCS_grid-info-box .col-3
+          +demo-cols(5)
+          .col-3
+            .DOCS_grid-info-box .col-3
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row">
+                <div class="col-5">.col-5</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+              <div class="row">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col-4">.col-4</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+              <div class="row">
+                <div class="col-3">.col-3</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col-3">.col-3</div>
+              </div>
+      h2 Responsive
+      h3 Responsive rows 
+      .DOCS_example
+        strong .row-12 .row-sm-6 .row-lg-4
+        .row-12.row-sm-6.row-lg-4
+          +demo-cols(6)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row-12 row-sm-6 row-lg-4">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+      h3 Responsive columns
+      p As usual, the classes of the column override the width set in the row. To get the column to resize with the row again .col-auto is used.
+      .DOCS_example
+        strong .row-12 .row-sm-6 .row-lg-4
+        .row-12.row-sm-6.row-lg-4
+          .col-auto.col-lg-8
+            .DOCS_grid-info-box .col-auto .col-lg-8
+          +demo-cols(5)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row-12 row-sm-6 row-lg-4">
+                <div class="col-auto col-lg-8">.col-auto .col-lg-8</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+
+      h2 Offsets
+      .DOCS_example
+        strong .row
+        .row
+          .col
+            .DOCS_grid-info-box .col
+          .col.-offset-2
+            .DOCS_grid-info-box .col.-offset-2
+          .col
+            .DOCS_grid-info-box .col
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row">
+                <div class="col">.col</div>
+                <div class="col -offset-2">.col.-offset-2</div>
+                <div class="col">.col</div>
+              </div>
+
+      h3 Responsive offsets
+      .DOCS_example
+        strong .row
+        .row
+          .col
+            .DOCS_grid-info-box .col
+          .col.-offset-lg-2
+            .DOCS_grid-info-box .col.-offset-lg-2
+          .col
+            .DOCS_grid-info-box .col
+        .DOCS_seperator
+        strong .row
+        .row
+          .col-12.col-sm-6.col-lg-4
+            .DOCS_grid-info-box .col-12 .col-sm-6 .col-lg-4
+          .col-6.-offset-6.col-sm-6.-offset-sm-0.col-lg-3.-offset-lg-3
+            .DOCS_grid-info-box .col-6 .-offset-6 .col-sm-6 .-offset-sm-0 .col-lg-2 .-offset-lg-4
+          .col-12.col-lg-2
+            .DOCS_grid-info-box .col-12 .col-lg-2
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">.col-12 .col-sm-6 .col-lg-4</div>
+                <div class="col-6 -offset-6 col-sm-6 -offset-sm-0 col-lg-3 -offset-lg-3">.col-6 .-offset-6 .col-sm-6 .-offset-sm-0 .col-lg-2 .-offset-lg-4</div>
+                <div class="col-12 col-lg-2">.col-12 .col-lg-2</div>
+              </div>
+
+      h2 Vertical transformation
+      h3 Default row
+      .DOCS_example
+        strong .row
+        .row
+          +vertical-demo-cols
+      .DOCS_code
+        +vertical-demo-cols-code
+      h3 Even height
+      .DOCS_example
+        strong .row .-fullheight
+        .row.-fullheight
+          +vertical-demo-cols
+      .DOCS_code
+        +vertical-demo-cols-code
+
+      h3 Vertically centered columns
+      .DOCS_example
+        strong .row .-vert-align-center
+        .row.-vert-align-center
+          +vertical-demo-cols
+      .DOCS_code
+        +vertical-demo-cols-code
+
+      h3 Columns aligned to bottom
+      .DOCS_example
+        strong .row .-vert-align-end
+        .row.-vert-align-end
+          +vertical-demo-cols
+      .DOCS_code
+        +vertical-demo-cols-code
+
+      h2 Horizontal transformation
+      h3 Default row
+      .DOCS_example
+        strong .row-3
+        .row-3
+          +demo-cols(3)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row-3">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+      h3 Horizontally centered columns
+      .DOCS_example
+        strong .row-3 .-hor-align-center
+        .row-3.-hor-align-center
+          +demo-cols(3)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row-3 -hor-align-center">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+      h3 Aligned to bottom
+      .DOCS_example
+        strong .row-3 .-hor-align-end
+        .row-3.-hor-align-end
+          +demo-cols(3)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row-3 -hor-align-end">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+      h3 Even space around columns
+      .DOCS_example
+        strong .row-3 .-hor-align-around
+        .row-3.-hor-align-around
+          +demo-cols(3)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row-3 -hor-align-around">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+      h3 Even space between columns
+      .DOCS_example
+        strong .row-3 .-hor-align-between
+        .row-3.-hor-align-between
+          +demo-cols(3)
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row-3 -hor-align-between">
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+                <div class="col">.col</div>
+              </div>
+
+
+      h1 Notes when customizing
+      ol
+        li Don't write classes starting with .col- or .row-. These are reserved for the grid.
+    include ./includes/footer.jade
+
+

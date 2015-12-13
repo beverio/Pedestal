@@ -1,0 +1,179 @@
+// Base variables
+$primary: #00A0F6 // #1ED761
+$primary-text: #fff
+
+$secondary: #FF6400 // #F32315
+$secondary-text: #fff
+
+$border-size: 5px
+
+$gray: #101010
+$gray-light: #eee
+
+$border-radius: 5px
+$border-size: 1px
+
+$transition-speed: 0.2s
+
+/* Only increase this variable for debugging */
+$transition-multiplier: 1
+
+
+// Global settings
+$body-background: #fff
+
+$selection-background: $primary
+$selection-color: $primary-text
+
+// Grid
+$container-width: 80%
+$container-max-width: 1024px
+$breakpoint-large: 900px
+$breakpoint-small: 700px
+
+$gutter-width: 30px
+
+$columns: 12
+
+// Type
+$font-size: 14px
+$font-weight: 300;
+$text-color: $gray
+$line-height: (25px / $font-size)
+
+$link-color: $primary
+$link-color-hover: darken($primary, 20%)
+
+$heading-weight: 500
+$heading-color: $gray
+$heading-line-height: 1.1
+
+$font-size-h1: 3.157em
+$font-size-h2: 2.369em
+$font-size-h3: 1.777em
+$font-size-h4: 1.333em
+$font-size-h5: 1em
+$font-size-h6: 0.75em
+
+$font-size-h1: 2.75em
+$font-size-h2: 2.25em
+$font-size-h3: 1.5em
+$font-size-h4: 1.125em
+$font-size-h5: 1em
+$font-size-h6: 0.875em
+
+$font-size-small: 80%
+
+$font-size-lead: 18px
+$line-height-lead: 1.4em
+
+$text-spacing: ceil($font-size * $line-height)
+
+// Buttons
+$button-padding: ($text-spacing / 3) ($text-spacing / 1.5)
+$button-font-size: $font-size
+$button-border-size: $border-size
+$button-transition-speed: $transition-speed
+
+$button-small-padding: ($text-spacing / 6) ($text-spacing / 2)
+$button-small-font-size: $font-size
+
+// // Default
+$button-default-bg: transparent
+$button-default-border: #BEB9B0
+$button-default-text: $gray
+
+
+$button-default-bg-hover: #BEB9B0
+$button-default-border-hover: #BEB9B0
+$button-default-text-hover: #fff
+
+// // Primary
+$button-primary-bg: transparent
+$button-primary-border: $primary
+$button-primary-text: $primary
+
+$button-primary-bg-hover: $primary
+$button-primary-border-hover: $primary
+$button-primary-text-hover: $primary-text
+
+// // Secondary
+$button-secondary-bg: transparent
+$button-secondary-border: $secondary
+$button-secondary-text: $secondary
+
+$button-secondary-bg-hover: $secondary
+$button-secondary-border-hover: $secondary
+$button-secondary-text-hover: $secondary-text
+
+// Navigation
+// // Menu bar
+$menu-bar-padding-vert: 15px
+$menu-bar-padding-hor: 10px
+
+$menu-bar-background: #fff
+$menu-bar-color: lighten($text-color, 40%)
+$menu-bar-color-hover: $text-color
+$menu-bar-color-active: $text-color
+
+$menu-bar-border-size: $border-size
+$menu-bar-border-radius: $border-radius
+$menu-bar-border-color: $gray-light
+
+// // // Small
+$menu-bar-padding-hor-small: 5px
+$menu-bar-padding-vert-small: ($menu-bar-padding-vert / 1.6)
+
+// // // Inverse
+$menu-bar-background-inverse: $gray
+$menu-bar-color-active-inverse: #fff
+$menu-bar-color-hover-inverse: $menu-bar-color-active-inverse
+$menu-bar-color-inverse: darken($menu-bar-color-active-inverse, 30%)
+$menu-bar-border-color-inverse: $gray
+
+// // // Brand
+$menu-bar-brand-background: $gray
+$menu-bar-brand-color: #fff
+$menu-bar-brand-color-hover: darken($menu-bar-brand-color, 20%)
+
+$menu-bar-brand-weight: 500
+$menu-bar-brand-padding: ($menu-bar-padding-vert / 2) $menu-bar-padding-vert
+$menu-bar-brand-margin: $menu-bar-padding-vert / 2 0
+$menu-bar-brand-border-radius: $border-radius
+// // // Buttons
+$menu-bar-button-padding: ($menu-bar-padding-vert / 2) $menu-bar-padding-vert
+
+// // Menu list
+$menu-list-color: $text-color
+$menu-list-background: #fff
+
+$menu-list-padding: ($text-spacing / 2)
+
+$menu-list-border-radius: $border-radius
+$menu-list-border-color: $gray-light
+$menu-list-border-size: $border-size
+
+
+$menu-list-color-hover: $primary-text
+$menu-list-background-hover: $primary
+$menu-list-border-color-hover: $primary
+
+// Messages
+$message-border-size: $border-size
+$message-border-radius: $border-radius
+$message-padding: 10px 20px
+
+// Default
+$message-default-bg: $gray-light
+$message-default-text: $text-color
+$message-default-border: $gray-light
+
+// Primary
+$message-primary-bg: $primary
+$message-primary-text: $primary-text
+$message-primary-border: $primary
+
+// Secondary
+$message-secondary-bg: $secondary
+$message-secondary-text: $secondary-text
+$message-secondary-border: $secondary

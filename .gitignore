@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+*.sublime-project
+*.sublime-workspace
+node_modules
+
+// No reason to include these files too
+dist/downloads

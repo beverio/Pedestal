@@ -1,0 +1,16 @@
+@mixin message($bg, $border, $text)
+  background: $bg
+  border: $message-border-size solid $border
+  color: $text
+
+.message
+  padding: $message-padding
+  border-radius: $message-border-radius
+  // Default
+  @include message($message-default-bg, $message-default-border, $message-default-text)
+  // Primary
+  &.-primary
+    @include message($message-primary-bg, $message-primary-border, $message-primary-text)
+  // Secondary
+  &.-secondary
+    @include message($message-secondary-bg, $message-secondary-border, $message-secondary-text)

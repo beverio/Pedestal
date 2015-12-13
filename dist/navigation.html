@@ -1,0 +1,281 @@
+
+<html>
+  <head>
+    <title>Pedestal</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/pedestal.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    <input id="menu-bar-toggle-main" type="checkbox" name="open-input"/>
+    <div class="menu-bar -responsive -top">
+      <div class="container"><a href="/" class="brand">Pedestal</a>
+        <div class="right">
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/elements.html" class="-active">Elements</a></li>
+              <li><a href="/themes.html">Themes</a></li>
+              <li><a href="/download.html" class="button -primary">Download</a></li>
+            </ul>
+          </nav>
+          <label id="open-button" for="menu-bar-toggle-main">Menu</label>
+        </div>
+      </div>
+    </div>
+    <input id="menu-bar-toggle-sub" type="checkbox" name="open-input"/>
+    <div class="menu-bar -responsive -top -small -inverse">
+      <div class="container">
+        <div class="center">
+          <nav>
+            <ul>
+              <li><a href="/elements.html">Overview</a></li>
+              <li><a href="/typography.html">Typography</a></li>
+              <li><a href="/grid.html">Grid</a></li>
+              <li><a href="/buttons.html">Buttons</a></li>
+              <li><a href="/navigation.html" class="-active">Navigation</a></li>
+              <li><a href="/forms.html">Forms</a></li>
+              <li><a href="/messages.html">Messages</a></li>
+              <li><a href="/tables.html">Tables</a></li>
+              <li><a href="/cards.html">Cards</a></li>
+              <li><a href="/images.html">Images</a></li>
+              <li><a href="/code.html">Code</a></li>
+            </ul>
+          </nav>
+          <label id="open-button" for="menu-bar-toggle-sub">All Elements</label>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Navigation</h1>
+      <h2>Menu bar</h2>
+      <div class="DOCS_example">
+        <div class="menu-bar">
+          <nav>
+            <ul>
+              <li><a href="#" class="-active">Home</a></li>
+              <li><a href="#">Typography</a></li>
+              <li><a href="#">Grid</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;div class=&quot;menu-bar&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;brand&quot;&gt;Pedestal&lt;/a&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;-active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+      <h3>Menu bar  on top</h3>
+      <div class="DOCS_example">
+        <div class="menu-bar -top">
+          <nav>
+            <ul>
+              <li><a href="#" class="-active">Home</a></li>
+              <li><a href="#">Typography</a></li>
+              <li><a href="#">Grid</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;div class=&quot;menu-bar -top&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;brand&quot;&gt;Pedestal&lt;/a&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;-active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+      <h3>Small menu bar</h3>
+      <div class="DOCS_example">
+        <div class="menu-bar -small">
+          <nav>
+            <ul>
+              <li><a href="#" class="-active">Home</a></li>
+              <li><a href="#">Typography</a></li>
+              <li><a href="#">Grid</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;div class=&quot;menu-bar -small&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;brand&quot;&gt;Pedestal&lt;/a&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;-active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+      <h3>Inverse menu bar</h3>
+      <div class="DOCS_example">
+        <div class="menu-bar -inverse">
+          <nav>
+            <ul>
+              <li><a href="#" class="-active">Home</a></li>
+              <li><a href="#">Typography</a></li>
+              <li><a href="#">Grid</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;div class=&quot;menu-bar -inverse&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;brand&quot;&gt;Pedestal&lt;/a&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;-active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+      <h3>Menu bar with brand, aligned right</h3>
+      <div class="DOCS_example">
+        <div class="menu-bar"><a href="" class="brand">Pedestal</a>
+          <div class="right">
+            <nav>
+              <ul>
+                <li><a href="#" class="-active">Home</a></li>
+                <li><a href="#">Typography</a></li>
+                <li><a href="#">Grid</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;div class=&quot;menu-bar&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;brand&quot;&gt;Pedestal&lt;/a&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;-active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+      <h3>Menu bar with centered menu</h3>
+      <div class="DOCS_example">
+        <div class="menu-bar">
+          <div class="center">
+            <nav>
+              <ul>
+                <li><a href="#" class="-active">Home</a></li>
+                <li><a href="#">Typography</a></li>
+                <li><a href="#">Grid</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;div class=&quot;menu-bar&quot;&gt;
+  &lt;div class=&quot;center&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;-active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+      <h3>Responsive menu bar</h3>
+      <div class="DOCS_example">
+        <input id="menu-bar-toggle-demo" type="checkbox" name="open-input"/>
+        <div class="menu-bar -responsive"><a href="" class="brand">Pedestal</a>
+          <div class="right">
+            <nav>
+              <ul>
+                <li><a href="#" class="-active">Home</a></li>
+                <li><a href="#">Typography</a></li>
+                <li><a href="#">Grid</a></li>
+                <li><a href="#">Buttons</a></li>
+                <li><a href="#">Navigation</a></li>
+              </ul>
+            </nav>
+            <label id="open-button" for="menu-bar-toggle-demo">Menu</label>
+          </div>
+        </div>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;input id=&quot;menu-toggle-demo&quot; type=&quot;checkbox&quot; name=&quot;open-input&quot;/&gt;
+&lt;div class=&quot;menu-bar -responsive&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;brand&quot;&gt;Pedestal&lt;/a&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;-active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Buttons&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Navigation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button -primary -full&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;label id=&quot;open-button&quot; for=&quot;menu-toggle-demo&quot;&gt;Menu&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+      <div class="row-12 row-sm-6 row-lg-4">
+        <div class="col">
+          <h2>Menu list</h2>
+          <div class="DOCS_example">
+            <div class="menu-list">
+              <ul>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="DOCS_code">
+            <pre><code>&lt;div class=&quot;menu-list&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">Dit is een footer</div>
+    </footer>
+  </body>
+</html>

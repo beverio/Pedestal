@@ -1,0 +1,25 @@
+html
+  head
+    title Pedestal
+    include ./includes/head.jade
+  body
+    input#menu-bar-toggle-main(type="checkbox" name="open-input")
+    .menu-bar.-responsive.-top
+      .container
+        a(href="/").brand Pedestal
+        .right
+          nav
+            ul
+              li: a(href="/") Home
+              li: a(href="/elements.html") Elements
+              li: a.-active(href="/themes.html") Themes
+              li: a.button.-primary(href="/download.html") Download
+          label#open-button(for="menu-bar-toggle-main") Menu
+    .container
+      h1 Themes
+      .row-4
+        each item in themeFiles
+          .col
+            h2= item
+            a(href="/themes/" + item + ".html")
+              img(src="/img/themes/" + item + "-1280.png").DOCS_theme-img
