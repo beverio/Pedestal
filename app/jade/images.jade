@@ -35,8 +35,11 @@ html
           label#open-button(for="menu-bar-toggle-sub") All Elements
     .container
       h1 Images
+      h2 Sizing
       .row-12.row-sm-6.row-lg-4
         .col
+          h3 Responsive
+          p Max. 100% width of parent
           .DOCS_example
             img(src="https://unsplash.it/200/200").img-responsive
           .DOCS_code
@@ -45,6 +48,19 @@ html
                 :escape-html
                   <img src="image.jpg" class="img-responsive"/>
         .col
+          h3 Wide
+          p 100% width of parent
+          .DOCS_example
+            img(src="https://unsplash.it/200/200").img-wide
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <img src="image.jpg" class="img-wide"/>
+      h2 Border radius
+      .row-12.row-sm-6.row-lg-4
+        .col
+          h3 Rounded borders
           .DOCS_example
             img(src="https://unsplash.it/200/200").img-responsive.img-rounded
           .DOCS_code
@@ -53,6 +69,7 @@ html
                 :escape-html
                   <img src="image.jpg" class="img-responsive img-rounded"/>
         .col
+          h3 Round borders
           .DOCS_example
             img(src="https://unsplash.it/200/200").img-responsive.img-round
           .DOCS_code
@@ -60,14 +77,27 @@ html
               code
                 :escape-html
                   <img src="image.jpg" class="img-responsive img-round"/>
+      h2 Thumbnails
+      .row-12.row-sm-6.row-lg-3
         .col
-          .DOCS_example
-            img(src="https://unsplash.it/200/200").img-wide
-          .DOCS_code
-            pre
-              code
-                :escape-html
-                  <img src="image.jpg" class="img-wide"/><
+          a(href="").thumbnail
+            img(src="https://unsplash.it/300/130").img-responsive
+        .col
+          .thumbnail
+            img(src="https://unsplash.it/300/130").img-responsive
+        .col
+          a(href="").thumbnail
+            img(src="https://unsplash.it/300/130").img-responsive
+            .content
+              h3 Thumbnail
+              p Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit
+        .col
+          .thumbnail
+            img(src="https://unsplash.it/300/130").img-responsive
+            .content
+              h3 Thumbnail
+              p Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit
+
     include ./includes/footer.jade
 
 

@@ -584,7 +584,6 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   border-radius: 5px;
   width: 100%; }
 
-/* Only increase this variable for debugging */
 .button {
   display: inline-block;
   border-radius: 5px;
@@ -618,30 +617,30 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     border-left: 1px solid #BEB9B0; }
   .button.-primary {
     background: transparent;
-    border-color: #00A0F6;
-    color: #00A0F6;
+    border-color: #FF1E01;
+    color: #FF1E01;
     transition: 0.2s; }
     .button.-primary:hover:not(.-disabled) {
-      background: #00A0F6;
-      border-color: #00A0F6;
+      background: #FF1E01;
+      border-color: #FF1E01;
       color: #fff; }
       .button.-primary:hover:not(.-disabled) > .right {
-        border-color: #00A0F6; }
+        border-color: #FF1E01; }
     .button.-primary > .right {
-      border-left: 1px solid #00A0F6; }
+      border-left: 1px solid #FF1E01; }
   .button.-secondary {
     background: transparent;
-    border-color: #FF6400;
-    color: #FF6400;
+    border-color: #FF9A04;
+    color: #FF9A04;
     transition: 0.2s; }
     .button.-secondary:hover:not(.-disabled) {
-      background: #FF6400;
-      border-color: #FF6400;
+      background: #FF9A04;
+      border-color: #FF9A04;
       color: #fff; }
       .button.-secondary:hover:not(.-disabled) > .right {
-        border-color: #FF6400; }
+        border-color: #FF9A04; }
     .button.-secondary > .right {
-      border-left: 1px solid #FF6400; }
+      border-left: 1px solid #FF9A04; }
   .button.-wide {
     width: 100%;
     text-align: center; }
@@ -663,30 +662,30 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
       border-left: 1px solid #BEB9B0; }
     .button.-inverse.-primary {
       background: transparent;
-      border-color: #00A0F6;
-      color: #00A0F6;
+      border-color: #FF1E01;
+      color: #FF1E01;
       transition: 0.2s; }
       .button.-inverse.-primary:hover:not(.-disabled) {
-        background: #00A0F6;
-        border-color: #00A0F6;
+        background: #FF1E01;
+        border-color: #FF1E01;
         color: #fff; }
         .button.-inverse.-primary:hover:not(.-disabled) > .right {
-          border-color: #00A0F6; }
+          border-color: #FF1E01; }
       .button.-inverse.-primary > .right {
-        border-left: 1px solid #00A0F6; }
+        border-left: 1px solid #FF1E01; }
     .button.-inverse.-secondary {
       background: transparent;
-      border-color: #FF6400;
-      color: #FF6400;
+      border-color: #FF9A04;
+      color: #FF9A04;
       transition: 0.2s; }
       .button.-inverse.-secondary:hover:not(.-disabled) {
-        background: #FF6400;
-        border-color: #FF6400;
+        background: #FF9A04;
+        border-color: #FF9A04;
         color: #fff; }
         .button.-inverse.-secondary:hover:not(.-disabled) > .right {
-          border-color: #FF6400; }
+          border-color: #FF9A04; }
       .button.-inverse.-secondary > .right {
-        border-left: 1px solid #FF6400; }
+        border-left: 1px solid #FF9A04; }
 
 .button-group > .button:not(:first-child):not(:last-child) {
   border-radius: 0;
@@ -739,7 +738,26 @@ pre {
 .img-round {
   border-radius: 50%; }
 
-/* Only increase this variable for debugging */
+.thumbnail {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px;
+  background: #fff;
+  color: #101010; }
+  .thumbnail img {
+    display: block;
+    height: auto;
+    width: 100%; }
+  .thumbnail .content {
+    padding: 0 5px; }
+
+a.thumbnail {
+  transition: 0.2s; }
+  a.thumbnail:hover {
+    border-color: #FF1E01; }
+
 [id*='menu-bar-toggle-'] {
   display: none; }
 
@@ -800,7 +818,7 @@ pre {
   .menu-bar.-small nav > ul > li > a {
     padding: 9.375px;
     margin-left: 5px; }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .menu-bar.-responsive nav {
       height: 0;
       overflow: hidden;
@@ -822,7 +840,7 @@ pre {
     .menu-bar.-inverse nav > ul > li > a.-active {
       color: #fff; }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   input[type="checkbox"]:checked + .menu-bar.-responsive {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -848,8 +866,8 @@ pre {
       border: 1px solid #eee;
       color: #101010; }
       .menu-list ul li a:hover {
-        background: #00A0F6;
-        border-color: #00A0F6;
+        background: #FF1E01;
+        border-color: #FF1E01;
         color: #fff; }
     .menu-list ul li:first-child a {
       border-radius: 5px 5px 0 0; }
@@ -865,12 +883,12 @@ pre {
   border: 1px solid #eee;
   color: #101010; }
   .message.-primary {
-    background: #00A0F6;
-    border: 1px solid #00A0F6;
+    background: #FF1E01;
+    border: 1px solid #FF1E01;
     color: #fff; }
   .message.-secondary {
-    background: #FF6400;
-    border: 1px solid #FF6400;
+    background: #FF9A04;
+    border: 1px solid #FF9A04;
     color: #fff; }
 
 .page-footer {
@@ -880,7 +898,7 @@ pre {
 .-hidden {
   display: none; }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .-sm-hidden {
     display: none; }
   .-sm-visible {
@@ -890,7 +908,7 @@ pre {
     display: -ms-flexbox;
     display: flex; } }
 
-@media (min-width: 850px) {
+@media (min-width: 900px) {
   .-lg-hidden {
     display: none; }
   .-lg-visible {

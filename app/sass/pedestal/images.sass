@@ -9,7 +9,26 @@
   width: 100%
 
 .img-rounded
-  border-radius: $border-radius
+  border-radius: $img-rounded-border-radius
 
 .img-round
   border-radius: 50%;
+
+.thumbnail
+  display: block
+  overflow: hidden
+  border: $thumbnail-border-size solid $thumbnail-border-color
+  border-radius: $thumbnail-border-radius
+  padding: $thumbnail-padding
+  background: #fff
+  color: $text-color
+  img
+    display: block
+    height: auto
+    width: 100%
+  .content
+    padding: $thumbnail-content-padding
+a.thumbnail
+  transition: $thumbnail-transition-speed
+  &:hover
+    border-color: $thumbnail-border-color-hover

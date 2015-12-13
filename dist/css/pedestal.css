@@ -584,7 +584,6 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   border-radius: 5px;
   width: 100%; }
 
-/* Only increase this variable for debugging */
 .button {
   display: inline-block;
   border-radius: 5px;
@@ -739,7 +738,26 @@ pre {
 .img-round {
   border-radius: 50%; }
 
-/* Only increase this variable for debugging */
+.thumbnail {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px;
+  background: #fff;
+  color: #101010; }
+  .thumbnail img {
+    display: block;
+    height: auto;
+    width: 100%; }
+  .thumbnail .content {
+    padding: 0 5px; }
+
+a.thumbnail {
+  transition: 0.2s; }
+  a.thumbnail:hover {
+    border-color: #00A0F6; }
+
 [id*='menu-bar-toggle-'] {
   display: none; }
 

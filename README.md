@@ -4,7 +4,6 @@ You need to have Gulp and PhantomJS globally installed for this to compile. Actu
 For now this readme will serve as an to-do list.
 ## To-do
 ### General
-- Fix having to load in settings twice in pedestal.sass
 - Finish all empty element pages, including the main page
 - Drop-shadow mixin and settings
   While pedestal elements have no drop shadows by default, adding settings for all elements would make it much easier to add drop shadows in themes.
@@ -27,8 +26,6 @@ For now this readme will serve as an to-do list.
 - Forms
 - Tables
 - Cards
-- Images
-  - Thumbnails
 
 ### Utilities
 I'm not sure about adding these. 
