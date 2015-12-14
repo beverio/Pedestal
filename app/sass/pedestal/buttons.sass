@@ -3,30 +3,32 @@
   border-color: $border
   color: $text
   transition: ($button-transition-speed * $transition-multiplier)
+
+  > .right
+    border-left: $button-border-size solid $border 
+
   &:hover:not(.-disabled)
     background: $bg-hover
     border-color: $border-hover
     color: $text-hover
     > .right
-      border-color: $border-hover
-
-  > .right
-    border-left: $button-border-size solid $border
+      border-color: $text-hover 
 
 @mixin button-inverse($bg-hover, $border-hover, $text-hover, $bg, $border, $text)
   background: $bg
   border-color: $border
   color: $text
   transition: ($button-transition-speed * $transition-multiplier)
+
+  > .right
+    border-left: $button-border-size solid $text
+
   &:hover
     background: $bg-hover
     border-color: $border-hover
     color: $text-hover
     > .right 
-      border-color: $border-hover
-
-  > .right
-    border-left: $button-border-size solid $border
+      border-color: $text-hover
 
 
 .button
@@ -70,13 +72,13 @@
     font-size: $button-small-font-size
 
   &.-inverse
-    @include button($button-default-bg, $button-default-border, $button-default-text, $button-default-bg-hover, $button-default-border-hover, $button-default-text-hover)
+    @include button-inverse($button-default-bg, $button-default-border, $button-default-text, $button-default-bg-hover, $button-default-border-hover, $button-default-text-hover)
 
     &.-primary
-      @include button($button-primary-bg, $button-primary-border, $button-primary-text, $button-primary-bg-hover, $button-primary-border-hover, $button-primary-text-hover)
+      @include button-inverse($button-primary-bg, $button-primary-border, $button-primary-text, $button-primary-bg-hover, $button-primary-border-hover, $button-primary-text-hover)
 
     &.-secondary
-      @include button($button-secondary-bg, $button-secondary-border, $button-secondary-text, $button-secondary-bg-hover, $button-secondary-border-hover, $button-secondary-text-hover)
+      @include button-inverse($button-secondary-bg, $button-secondary-border, $button-secondary-text, $button-secondary-bg-hover, $button-secondary-border-hover, $button-secondary-text-hover)
 
 
 .button-group

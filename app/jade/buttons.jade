@@ -7,7 +7,7 @@ html
     .menu-bar.-responsive.-top
       .container
         a(href="/").brand Pedestal
-        .right
+        .right 
           nav
             ul
               li: a(href="/") Home
@@ -44,6 +44,13 @@ html
           .col
             a(href="").button.-secondary Secondary button
       .DOCS_code
+        pre
+          code
+            :escape-html
+              <a href="" class="button">Default button</a>
+              <a href="" class="button -primary">Primary button</a>
+              <a href="" class="button -secondary">Secondary button</a>
+
       h2 Small buttons
       .DOCS_example
         .row
@@ -54,6 +61,12 @@ html
           .col
             a(href="").button.-secondary.-small Secondary button
       .DOCS_code
+        pre
+          code
+            :escape-html
+              <a href="" class="button -small">Default button</a>
+              <a href="" class="button -primary -small">Primary button</a>
+              <a href="" class="button -secondary -small">Secondary button</a>
       h2 Disabled buttons
       .DOCS_example
         .row
@@ -64,10 +77,20 @@ html
           .col
             a(href="").button.-secondary.-disabled Secondary button
       .DOCS_code
+        pre
+          code
+            :escape-html
+              <a href="" class="button -disabled">Default button</a>
+              <a href="" disabled="disabled" class="button -primary">Primary button</a>
+              <a href="" class="button -secondary -disabled">Secondary button</a>
       h2 Wide buttons
       .DOCS_example
         a(href="").button.-secondary.-wide Wide secondary button
       .DOCS_code
+        pre
+          code
+            :escape-html
+              <a href="" class="button -secondary -wide">Wide secondary button</a>
 
       h2 Button group
       .DOCS_example
@@ -76,6 +99,14 @@ html
           a(href="").button.-primary Primary button
           a(href="").button.-secondary Secondary button
       .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="button-group">
+                <a href="" class="button -primary">Primary button</a>
+                <a href="" class="button -primary">Primary button</a>
+                <a href="" class="button -secondary">Secondary button</a>
+              </div>
 
       h2 Justified button group
       .DOCS_example
@@ -84,6 +115,14 @@ html
           a(href="").button.-primary Primary button
           a(href="").button.-secondary Secondary button
       .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="button-group -wide">
+                <a href="" class="button -primary">Primary button</a>
+                <a href="" class="button -primary">Primary button</a>
+                <a href="" class="button -secondary">Secondary button</a>
+              </div>
 
       h2 Thing in button
       .DOCS_example
@@ -100,6 +139,27 @@ html
               a(href="").button Buy now
                 .right $500
       .DOCS_code
+        pre
+          code
+            :escape-html
+              <a href="" class="button -primary">
+                Primary
+                <div class="right">$300</div>
+              </a>
+
+              <a href="" class="button -secondary">
+                Secondary
+                <div class="right">Download now</div>
+              </a>
+
+              <div class="button-group">
+                <a href="" class="button">Learn more</a>
+                <a href="" class="button">
+                  Buy now
+                  <div class="right">$500</div>
+                </a>
+              </div>
+
 
       h2 Inversed buttons
       .DOCS_example
@@ -112,4 +172,13 @@ html
             a(href="").button.-inverse.-secondary Secondary
               .right Download now
       .DOCS_code
+        pre
+          code
+            :escape-html
+              <a href="" class="button -inverse">Default button</a>
+              <a href="" class="button -inverse -primary">Primary button</a>
+              <a href="" class="button -inverse -secondary">
+                Secondary
+                <div class="right">Download now</div>
+              </a>
     include ./includes/footer.jade

@@ -607,40 +607,40 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     opacity: 0.5; }
   .button a.disabled {
     pointer-events: none; }
+  .button > .right {
+    border-left: 1px solid #BEB9B0; }
   .button:hover:not(.-disabled) {
     background: #BEB9B0;
     border-color: #BEB9B0;
     color: #fff; }
     .button:hover:not(.-disabled) > .right {
-      border-color: #BEB9B0; }
-  .button > .right {
-    border-left: 1px solid #BEB9B0; }
+      border-color: #fff; }
   .button.-primary {
     background: transparent;
     border-color: #00A0F6;
     color: #00A0F6;
     transition: 0.2s; }
+    .button.-primary > .right {
+      border-left: 1px solid #00A0F6; }
     .button.-primary:hover:not(.-disabled) {
       background: #00A0F6;
       border-color: #00A0F6;
       color: #fff; }
       .button.-primary:hover:not(.-disabled) > .right {
-        border-color: #00A0F6; }
-    .button.-primary > .right {
-      border-left: 1px solid #00A0F6; }
+        border-color: #fff; }
   .button.-secondary {
     background: transparent;
     border-color: #FF6400;
     color: #FF6400;
     transition: 0.2s; }
+    .button.-secondary > .right {
+      border-left: 1px solid #FF6400; }
     .button.-secondary:hover:not(.-disabled) {
       background: #FF6400;
       border-color: #FF6400;
       color: #fff; }
       .button.-secondary:hover:not(.-disabled) > .right {
-        border-color: #FF6400; }
-    .button.-secondary > .right {
-      border-left: 1px solid #FF6400; }
+        border-color: #fff; }
   .button.-wide {
     width: 100%;
     text-align: center; }
@@ -648,44 +648,44 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     padding: 4.16667px 12.5px;
     font-size: 14px; }
   .button.-inverse {
-    background: transparent;
+    background: #BEB9B0;
     border-color: #BEB9B0;
-    color: #101010;
+    color: #fff;
     transition: 0.2s; }
-    .button.-inverse:hover:not(.-disabled) {
-      background: #BEB9B0;
-      border-color: #BEB9B0;
-      color: #fff; }
-      .button.-inverse:hover:not(.-disabled) > .right {
-        border-color: #BEB9B0; }
     .button.-inverse > .right {
-      border-left: 1px solid #BEB9B0; }
+      border-left: 1px solid #fff; }
+    .button.-inverse:hover {
+      background: transparent;
+      border-color: #BEB9B0;
+      color: #101010; }
+      .button.-inverse:hover > .right {
+        border-color: #101010; }
     .button.-inverse.-primary {
-      background: transparent;
+      background: #00A0F6;
       border-color: #00A0F6;
-      color: #00A0F6;
+      color: #fff;
       transition: 0.2s; }
-      .button.-inverse.-primary:hover:not(.-disabled) {
-        background: #00A0F6;
-        border-color: #00A0F6;
-        color: #fff; }
-        .button.-inverse.-primary:hover:not(.-disabled) > .right {
-          border-color: #00A0F6; }
       .button.-inverse.-primary > .right {
-        border-left: 1px solid #00A0F6; }
+        border-left: 1px solid #fff; }
+      .button.-inverse.-primary:hover {
+        background: transparent;
+        border-color: #00A0F6;
+        color: #00A0F6; }
+        .button.-inverse.-primary:hover > .right {
+          border-color: #00A0F6; }
     .button.-inverse.-secondary {
-      background: transparent;
+      background: #FF6400;
       border-color: #FF6400;
-      color: #FF6400;
+      color: #fff;
       transition: 0.2s; }
-      .button.-inverse.-secondary:hover:not(.-disabled) {
-        background: #FF6400;
-        border-color: #FF6400;
-        color: #fff; }
-        .button.-inverse.-secondary:hover:not(.-disabled) > .right {
-          border-color: #FF6400; }
       .button.-inverse.-secondary > .right {
-        border-left: 1px solid #FF6400; }
+        border-left: 1px solid #fff; }
+      .button.-inverse.-secondary:hover {
+        background: transparent;
+        border-color: #FF6400;
+        color: #FF6400; }
+        .button.-inverse.-secondary:hover > .right {
+          border-color: #FF6400; }
 
 .button-group > .button:not(:first-child):not(:last-child) {
   border-radius: 0;

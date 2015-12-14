@@ -12,7 +12,7 @@
     <input id="menu-bar-toggle-main" type="checkbox" name="open-input"/>
     <div class="menu-bar -responsive -top">
       <div class="container"><a href="/" class="brand">Pedestal</a>
-        <div class="right">
+        <div class="right"> 
           <nav>
             <ul>
               <li><a href="/">Home</a></li>
@@ -57,7 +57,12 @@
           <div class="col"><a href="" class="button -secondary">Secondary button</a></div>
         </div>
       </div>
-      <div class="DOCS_code"></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Default button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button -primary&quot;&gt;Primary button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button -secondary&quot;&gt;Secondary button&lt;/a&gt;
+</code></pre>
+      </div>
       <h2>Small buttons</h2>
       <div class="DOCS_example">
         <div class="row">
@@ -66,7 +71,11 @@
           <div class="col"><a href="" class="button -secondary -small">Secondary button</a></div>
         </div>
       </div>
-      <div class="DOCS_code"></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;a href=&quot;&quot; class=&quot;button -small&quot;&gt;Default button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button -primary -small&quot;&gt;Primary button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button -secondary -small&quot;&gt;Secondary button&lt;/a&gt;</code></pre>
+      </div>
       <h2>Disabled buttons</h2>
       <div class="DOCS_example">
         <div class="row">
@@ -75,20 +84,41 @@
           <div class="col"><a href="" class="button -secondary -disabled">Secondary button</a></div>
         </div>
       </div>
-      <div class="DOCS_code"></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;a href=&quot;&quot; class=&quot;button -disabled&quot;&gt;Default button&lt;/a&gt;
+&lt;a href=&quot;&quot; disabled=&quot;disabled&quot; class=&quot;button -primary&quot;&gt;Primary button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button -secondary -disabled&quot;&gt;Secondary button&lt;/a&gt;</code></pre>
+      </div>
       <h2>Wide buttons</h2>
       <div class="DOCS_example"><a href="" class="button -secondary -wide">Wide secondary button</a></div>
-      <div class="DOCS_code"></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;a href=&quot;&quot; class=&quot;button -secondary -wide&quot;&gt;Wide secondary button&lt;/a&gt;
+</code></pre>
+      </div>
       <h2>Button group</h2>
       <div class="DOCS_example">
         <div class="button-group"><a href="" class="button -primary">Primary button</a><a href="" class="button -primary">Primary button</a><a href="" class="button -secondary">Secondary button</a></div>
       </div>
-      <div class="DOCS_code"></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;div class=&quot;button-group&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;button -primary&quot;&gt;Primary button&lt;/a&gt;
+  &lt;a href=&quot;&quot; class=&quot;button -primary&quot;&gt;Primary button&lt;/a&gt;
+  &lt;a href=&quot;&quot; class=&quot;button -secondary&quot;&gt;Secondary button&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
       <h2>Justified button group</h2>
       <div class="DOCS_example">
         <div class="button-group -wide"><a href="" class="button -primary">Primary button</a><a href="" class="button -primary">Primary button</a><a href="" class="button -secondary">Secondary button</a></div>
       </div>
-      <div class="DOCS_code"></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;div class=&quot;button-group -wide&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;button -primary&quot;&gt;Primary button&lt;/a&gt;
+  &lt;a href=&quot;&quot; class=&quot;button -primary&quot;&gt;Primary button&lt;/a&gt;
+  &lt;a href=&quot;&quot; class=&quot;button -secondary&quot;&gt;Secondary button&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
       <h2>Thing in button</h2>
       <div class="DOCS_example">
         <div class="row">
@@ -102,7 +132,27 @@
           </div>
         </div>
       </div>
-      <div class="DOCS_code"></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;a href=&quot;&quot; class=&quot;button -primary&quot;&gt;
+  Primary
+  &lt;div class=&quot;right&quot;&gt;$300&lt;/div&gt;
+&lt;/a&gt;
+
+&lt;a href=&quot;&quot; class=&quot;button -secondary&quot;&gt;
+  Secondary
+  &lt;div class=&quot;right&quot;&gt;Download now&lt;/div&gt;
+&lt;/a&gt;
+
+&lt;div class=&quot;button-group&quot;&gt;
+  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Learn more&lt;/a&gt;
+  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;
+    Buy now
+    &lt;div class=&quot;right&quot;&gt;$500&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</code></pre>
+      </div>
       <h2>Inversed buttons</h2>
       <div class="DOCS_example">
         <div class="row">
@@ -112,7 +162,14 @@
               <div class="right">Download now</div></a></div>
         </div>
       </div>
-      <div class="DOCS_code"></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;a href=&quot;&quot; class=&quot;button -inverse&quot;&gt;Default button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button -inverse -primary&quot;&gt;Primary button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button -inverse -secondary&quot;&gt;
+  Secondary
+  &lt;div class=&quot;right&quot;&gt;Download now&lt;/div&gt;
+&lt;/a&gt;</code></pre>
+      </div>
     </div>
     <footer class="page-footer">
       <div class="container">This is the footer</div>
