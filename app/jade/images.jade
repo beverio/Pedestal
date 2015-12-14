@@ -78,25 +78,65 @@ html
                 :escape-html
                   <img src="image.jpg" class="img-responsive img-round"/>
       h2 Thumbnails
-      .row-12.row-sm-6.row-lg-3
+      .row-12.row-sm-6
         .col
-          a(href="").thumbnail
-            img(src="https://unsplash.it/300/130").img-responsive
+          .DOCS_example
+            a(href="").thumbnail
+              img(src="https://unsplash.it/300/130").img-responsive
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <a href="" class="thumbnail">
+                    <img src="https://unsplash.it/300/130" class="img-responsive"/>
+                  </a>
         .col
-          .thumbnail
-            img(src="https://unsplash.it/300/130").img-responsive
+          .DOCS_example
+            .thumbnail
+              img(src="https://unsplash.it/300/130").img-responsive
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <div class="thumbnail">
+                    <img src="https://unsplash.it/300/130" class="img-responsive"/>
+                  </div>
         .col
-          a(href="").thumbnail
-            img(src="https://unsplash.it/300/130").img-responsive
-            .content
-              h3 Thumbnail
-              p Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit
+          .DOCS_example
+            a(href="").thumbnail
+              img(src="https://unsplash.it/300/130").img-responsive
+              .content
+                h3 Thumbnail
+                p Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <a href="" class="thumbnail">
+                    <img src="https://unsplash.it/300/130" class="img-responsive"/>
+                    <div class="content">
+                      <h3>Thumbnail</h3>
+                      <p>Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+                    </div>
+                  </a>
         .col
-          .thumbnail
-            img(src="https://unsplash.it/300/130").img-responsive
-            .content
-              h3 Thumbnail
-              p Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit
+          .DOCS_example
+            .thumbnail
+              img(src="https://unsplash.it/300/130").img-responsive
+              .content
+                h3 Thumbnail
+                p Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit
+          .DOCS_code
+            pre
+              code
+                :escape-html
+                  <adiv class="thumbnail">
+                    <img src="https://unsplash.it/300/130" class="img-responsive"/>
+                    <div class="content">
+                      <h3>Thumbnail</h3>
+                      <p>Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+                    </div>
+                  </div>
 
     include ./includes/footer.jade
 
