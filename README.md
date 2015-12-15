@@ -20,9 +20,6 @@ For now this readme will serve as an to-do list.
 - Buttons
   - Test SVG icons in buttons
   - [disabled] hover
-- Type
-  - Add variable to edit font family from settings
-  - Add variable to edit heading font family only
 - Forms
 - Tables
 - Cards
@@ -32,6 +29,7 @@ I'm not sure about adding these.
 
 - Border color
 - Background color
+- Text color
 - Font-family
 - Background image
   - Gravity
