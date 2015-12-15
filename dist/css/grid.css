@@ -472,16 +472,19 @@ body {
     display: flex; } }
 
 ._bg-primary {
-  background-color: #00A0F6; }
+  background-color: #4416D0;
+  color: #fff; }
 
 ._bg-secondary {
-  background-color: #FF6400; }
+  background-color: #FF6400;
+  color: #fff; }
 
 ._bg-gray {
-  background-color: #101010; }
+  background-color: #101010;
+  color: #fff; }
 
 ._bg-primary-hover:hover {
-  background-color: #00A0F6; }
+  background-color: #4416D0; }
 
 ._bg-secondary-hover:hover {
   background-color: #FF6400; }
@@ -490,7 +493,7 @@ body {
   background-color: #101010; }
 
 ._border-primary {
-  border-color: #00A0F6; }
+  border-color: #4416D0; }
 
 ._border-secondary {
   border-color: #FF6400; }
@@ -499,7 +502,7 @@ body {
   border-color: #101010; }
 
 ._border-primary-hover:hover {
-  border-color: #00A0F6; }
+  border-color: #4416D0; }
 
 ._border-secondary-hover:hover {
   border-color: #FF6400; }

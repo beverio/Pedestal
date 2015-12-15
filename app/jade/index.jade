@@ -2,7 +2,7 @@ html
   head
     title Pedestal
     include ./includes/head.jade
-  body
+  body._bg-primary
     input#menu-bar-toggle-main(type="checkbox" name="open-input")
     .menu-bar.-responsive.-top
       .container
@@ -15,12 +15,7 @@ html
               li: a(href="/themes.html") Themes
               li: a.button.-primary(href="/download.html") Download
           label#open-button(for="menu-bar-toggle-main") Menu
-    .container.DOCS_home-container
-      .DOCS_home-content
-        h1 Pedestal
-        p CSS Only Responsive Framework
-        a(href='download.html').button.-primary Download now
-        |  
-        a(href='themes.html').button Themes
+    .DOCS_home-container
+      img(src="/img/pedestal.svg")
 
 

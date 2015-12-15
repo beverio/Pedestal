@@ -1,9 +1,6 @@
 /* Only increase this variable for debugging */
 .DOCS_home-container {
-  height: 70vh; }
-
-.DOCS_home-content {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -13,7 +10,7 @@
   width: 100%;
   padding: 10px 15px;
   border-radius: 5px;
-  border: 1px solid #00A0F6; }
+  border: 1px solid #4416D0; }
 
 .DOCS_example {
   border: 1px solid #eee;

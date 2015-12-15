@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   jade = require('gulp-jade'),
   csso = require('gulp-csso'),
+  svgmin = require('gulp-svgmin'),
   rename = require('gulp-rename'),
   browserSync = require('browser-sync'),
   gulpsync = require('gulp-sync')(gulp),
@@ -35,6 +36,12 @@ gulp.task('sass', function() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('dist/css/'));
+});
+
+gulp.task('svg', function () {
+    return gulp.src('app/img/*.svg')
+        .pipe(svgmin())
+        .pipe(gulp.dest('dist/img/'));
 });
 
 gulp.task('themes', function() {
@@ -120,7 +127,7 @@ gulp.task('zip', function () {
     .pipe(gulp.dest('dist/downloads/'));
 });
 
-gulp.task('watch', ['jade', 'sass', 'browsersync', 'themes', 'themes-jade', 'themes-screens'], function (){
+gulp.task('watch', ['jade', 'sass', 'svg', 'browsersync', 'themes', 'themes-jade', 'themes-screens'], function (){
   gulp.watch('app/sass/**/*.sass', ['sass', 'themes']); 
   gulp.watch('app/jade/**/*.jade', ['jade']); 
 })
