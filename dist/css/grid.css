@@ -470,3 +470,39 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
+
+._bg-primary {
+  background-color: #00A0F6; }
+
+._bg-secondary {
+  background-color: #FF6400; }
+
+._bg-gray {
+  background-color: #101010; }
+
+._bg-primary-hover:hover {
+  background-color: #00A0F6; }
+
+._bg-secondary-hover:hover {
+  background-color: #FF6400; }
+
+._bg-gray-hover:hover {
+  background-color: #101010; }
+
+._border-primary {
+  border-color: #00A0F6; }
+
+._border-secondary {
+  border-color: #FF6400; }
+
+._border-gray {
+  border-color: #101010; }
+
+._border-primary-hover:hover {
+  border-color: #00A0F6; }
+
+._border-secondary-hover:hover {
+  border-color: #FF6400; }
+
+._border-gray-hover:hover {
+  border-color: #101010; }

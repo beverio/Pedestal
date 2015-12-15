@@ -27,10 +27,6 @@ For now this readme will serve as an to-do list.
 ### Utilities
 I'm not sure about adding these. 
 
-- Border color
-- Background color
-- Text color
-- Font-family
 - Background image
   - Gravity
   - Size
