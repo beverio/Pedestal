@@ -6,6 +6,7 @@ var gulp = require('gulp'),
   csso = require('gulp-csso'),
   svgmin = require('gulp-svgmin'),
   rename = require('gulp-rename'),
+  changed = require('gulp-changed'),
   browserSync = require('browser-sync'),
   gulpsync = require('gulp-sync')(gulp),
   colorguard = require('gulp-colorguard'),
@@ -15,6 +16,7 @@ var gulp = require('gulp'),
 
 gulp.task('jade', function () {
   return gulp.src('app/jade/*.jade')
+    .pipe(changed('dist/', {extension: '.html'}))
     .pipe(jade({
       pretty: true
     }))
