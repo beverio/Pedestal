@@ -50,6 +50,45 @@
     </div>
     <div class="container">
       <h1>Code</h1>
+      <h2>Preformatted</h2>
+      <h3>Code</h3>
+      <div class="DOCS_example">
+        <pre><code>@media (min-width: $breakpoint-small)
+  @for <span class="highlight">$i</span> from 1 through $columns
+    .row > .col-sm-, [class*='row-'] > .col-sm-
+      width: (<span class="highlight">$i</span> * 100% / $columns)
+  .row > [class*='col-sm-'], [class*='row-'] > [class*='col-sm-']
+    flex: none<span class="line highlight">  .row > .col-sm-auto, [class*='row-'] > .col-sm-auto</span>    flex: 1</code></pre>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;pre&gt;
+  &lt;code&gt;
+    Normal line
+    Inline &lt;span class=&quot;highlight&quot;&gt;highlight&lt;/span&gt;
+    &lt;span class=&quot;line highlight&quot;&gt;Complete line highlight&lt;/span&gt;
+  &lt;/code&gt;
+&lt;/pre&gt;
+</code></pre>
+      </div>
+      <h3>With line numbers</h3>
+      <div class="DOCS_example">
+        <pre class="-numbered"><code><span class="line">@media (min-width: $breakpoint-small)</span><span class="line">  @for <span class="highlight">$i</span> from 1 through $columns</span><span class="line">    .row > .col-sm-</span><span class="line">       width: (<span class="highlight">$i</span> * 100% / $columns)</span><span class="line">  .row > [class*='col-sm-']</span><span class="line">    flex: none</span><span class="line highlight">  .row > .col-sm-auto</span><span class="line">    flex: 1</span></code></pre>
+      </div>
+      <div class="DOCS_code">
+        <pre><code>&lt;pre class=&quot;-numbered&quot;&gt;
+  &lt;code&gt;
+    &lt;span class=&quot;line&quot;&gt;Normal line&lt;/span&gt;
+    &lt;span class=&quot;line&quot;&gt;Inline &lt;span class=&quot;highlight&quot;&gt;highlight&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;line highlight&quot;&gt;Complete line highlight&lt;/span&gt;
+  &lt;/code&gt;
+&lt;/pre&gt;
+</code></pre>
+      </div>
+      <h2>Inline</h2>
+      <div class="DOCS_example"><code>.red { background: #f00 }</code></div>
+      <div class="DOCS_code">
+        <pre><code>&lt;code&gt;.red { background: #f00 }&lt;/code&gt;</code></pre>
+      </div>
     </div>
     <footer class="page-footer">
       <div class="container">This is the footer</div>

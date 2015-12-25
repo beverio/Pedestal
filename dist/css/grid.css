@@ -19,10 +19,6 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: -15px 0 15px -15px; }
-  .row.-fullheight > .col, [class*='row-'].-fullheight > .col {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
   .row.-vert-align-center, [class*='row-'].-vert-align-center {
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -47,6 +43,11 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+
+.row.-fullheight > .col, .row.-fullheight [class*='col-'], [class*='row-'].-fullheight > .col, [class*='row-'].-fullheight [class*='col-'] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .col, [class*='col-'] {
   -webkit-flex: 1;
@@ -448,64 +449,21 @@ body {
     -ms-flex: 1;
     flex: 1; } }
 
-.-hidden {
-  display: none; }
+.col.-hidden, [class*='col-'].-hidden {
+  display: none !important; }
 
 @media (min-width: 600px) {
-  .-sm-hidden {
-    display: none; }
-  .-sm-visible {
-    display: block; }
-  .row.-sm-visible, [class*='row-'].-sm-visible {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; } }
+  .col.-sm-hidden, [class*='col-'].-sm-hidden {
+    display: none !important; }
+  .col.-sm-visible, [class*='col-'].-sm-visible {
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important; } }
 
 @media (min-width: 850px) {
-  .-lg-hidden {
-    display: none; }
-  .-lg-visible {
-    display: block; }
-  .row.-lg-visible, [class*='row-'].-lg-visible {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; } }
-
-._bg-primary {
-  background-color: #4416D0;
-  color: #fff; }
-
-._bg-secondary {
-  background-color: #FF6400;
-  color: #fff; }
-
-._bg-gray {
-  background-color: #101010;
-  color: #fff; }
-
-._bg-primary-hover:hover {
-  background-color: #4416D0; }
-
-._bg-secondary-hover:hover {
-  background-color: #FF6400; }
-
-._bg-gray-hover:hover {
-  background-color: #101010; }
-
-._border-primary {
-  border-color: #4416D0; }
-
-._border-secondary {
-  border-color: #FF6400; }
-
-._border-gray {
-  border-color: #101010; }
-
-._border-primary-hover:hover {
-  border-color: #4416D0; }
-
-._border-secondary-hover:hover {
-  border-color: #FF6400; }
-
-._border-gray-hover:hover {
-  border-color: #101010; }
+  .col.-lg-hidden, [class*='col-'].-lg-hidden {
+    display: none !important; }
+  .col.-lg-visible, [class*='col-'].-lg-visible {
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important; } }

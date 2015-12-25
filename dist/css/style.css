@@ -28,7 +28,7 @@
     margin: 20px 0;
     border-bottom: 1px solid #eee; }
 
-.DOCS_code {
+.DOCS_code pre {
   border-radius: 0 0 5px 5px;
   border: 1px solid #eee;
   padding: 20px;

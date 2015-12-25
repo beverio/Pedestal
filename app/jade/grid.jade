@@ -6,8 +6,8 @@ mixin demo-cols(num)
     - var n = n + 1;
 
 mixin vertical-demo-cols
-  .col 
-    .DOCS_grid-info-box .col
+  .col-4 
+    .DOCS_grid-info-box .col-4
   .col 
     .DOCS_grid-info-box .col
       p This column contains way more text than any of the other columns do. Because of that, this column is higher.
@@ -22,7 +22,7 @@ mixin vertical-demo-cols-code
     code
       :escape-html
         <div class="row -vert-align-end">
-          <div class="col">.col</div>
+          <div class="col-4">.col-4</div>
           <div class="col">This column contains way more text than...</div>
           <div class="col">.col</div>
           <div class="col">.col</div>

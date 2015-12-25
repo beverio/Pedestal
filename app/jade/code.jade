@@ -35,10 +35,69 @@ html
           label#open-button(for="menu-bar-toggle-sub") All Elements
     .container
       h1 Code
+      h2 Preformatted
+      h3 Code
+      .DOCS_example
+        pre: code
+          | @media (min-width: $breakpoint-small)
+          |   @for 
+          span.highlight $i
+          |  from 1 through $columns
+          |     .row > .col-sm-#{$i}, [class*='row-'] > .col-sm-#{$i}
+          |       width: (
+          span.highlight $i
+          |  * 100% / $columns)
+          |   .row > [class*='col-sm-'], [class*='row-'] > [class*='col-sm-']
+          |     flex: none
+          span.line.highlight   .row > .col-sm-auto, [class*='row-'] > .col-sm-auto
+          |     flex: 1
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <pre>
+                <code>
+                  Normal line
+                  Inline <span class="highlight">highlight</span>
+                  <span class="line highlight">Complete line highlight</span>
+                </code>
+              </pre>
+
+      h3 With line numbers
+      .DOCS_example
+        pre.-numbered: code
+          span.line @media (min-width: $breakpoint-small)
+          span.line   @for 
+            span.highlight $i
+            |  from 1 through $columns
+          span.line     .row > .col-sm-#{$i}
+          span.line        width: (
+            span.highlight $i
+            |  * 100% / $columns)
+          span.line   .row > [class*='col-sm-']
+          span.line     flex: none
+          span.line.highlight   .row > .col-sm-auto
+          span.line     flex: 1
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <pre class="-numbered">
+                <code>
+                  <span class="line">Normal line</span>
+                  <span class="line">Inline <span class="highlight">highlight</span></span>
+                  <span class="line highlight">Complete line highlight</span>
+                </code>
+              </pre>
+
+      h2 Inline
+      .DOCS_example
+        code= '.red { background: #f00 }'
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <code>.red { background: #f00 }</code>
     include ./includes/footer.jade
-
-
-
-
 
 
