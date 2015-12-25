@@ -267,6 +267,44 @@ html
                 <div class="col-12 col-lg-2">.col-12 .col-lg-2</div>
               </div>
 
+      h2 Push
+      .DOCS_example
+        strong .row
+        .row
+          .col
+            .DOCS_grid-info-box .col
+          .col.-push-2
+            .DOCS_grid-info-box .col.-push-2
+          .col
+            .DOCS_grid-info-box .col
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row">
+                <div class="col">.col</div>
+                <div class="col -push-2">.col.-push-2</div>
+                <div class="col">.col</div>
+              </div>
+      h3 Responsive push
+      .DOCS_example
+        .row
+          .col
+            .DOCS_grid-info-box .col
+          .col.-push-sm-4.-push-lg-0
+            .DOCS_grid-info-box .col.-push-sm-4.-push-lg-0
+          .col.-push-lg-6
+            .DOCS_grid-info-box .col.-push-lg-6
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row">
+                <div class="col">.col</div>
+                <div class="col -push-sm-4 -push-lg-0">.col.-push-sm-4.-push-lg-0</div>
+                <div class="col -push-lg-6">.col.-push-lg-6</div>
+              </div>
+
       h2 Vertical transformation
       h3 Default row
       .DOCS_example
