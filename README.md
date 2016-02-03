@@ -14,6 +14,7 @@ For now this readme will serve as an to-do list.
 - Build better themes page
 - Better footer
 - Nice homepage
+- Font size variables
 
 
 ### Element specific

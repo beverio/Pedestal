@@ -8,9 +8,6 @@
   flex-wrap: wrap
   margin: (-$gutter-width / 2) 0 ($gutter-width / 2) (-$gutter-width / 2)
 
-  &.-fullheight > .col 
-    display: flex
-
   &.-vert-align-center
     align-items: center
 
@@ -28,6 +25,10 @@
 
   &.-hor-align-between
     justify-content: space-between
+
+.row.-fullheight, [class*='row-'].-fullheight
+  > .col, [class*='col-']
+    display: flex
 
 .col, [class*='col-'] 
   flex: 1
@@ -139,4 +140,19 @@
 @media (min-width: $breakpoint-large)
   .row-lg-auto > .col
     flex: 1
+
+.col.-hidden, [class*='col-'].-hidden
+  display: none !important
+
+@media (min-width: $breakpoint-small)
+  .col.-sm-hidden, [class*='col-'].-sm-hidden
+    display: none !important
+  .col.-sm-visible, [class*='col-'].-sm-visible
+    display: flex !important
+
+@media (min-width: $breakpoint-large)
+  .col.-lg-hidden, [class*='col-'].-lg-hidden
+    display: none !important
+  .col.-lg-visible, [class*='col-'].-lg-visible
+    display: flex !important
 

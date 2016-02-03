@@ -6,8 +6,8 @@ mixin demo-cols(num)
     - var n = n + 1;
 
 mixin vertical-demo-cols
-  .col 
-    .DOCS_grid-info-box .col
+  .col-4 
+    .DOCS_grid-info-box .col-4
   .col 
     .DOCS_grid-info-box .col
       p This column contains way more text than any of the other columns do. Because of that, this column is higher.
@@ -22,7 +22,7 @@ mixin vertical-demo-cols-code
     code
       :escape-html
         <div class="row -vert-align-end">
-          <div class="col">.col</div>
+          <div class="col-4">.col-4</div>
           <div class="col">This column contains way more text than...</div>
           <div class="col">.col</div>
           <div class="col">.col</div>
@@ -265,6 +265,44 @@ html
                 <div class="col-12 col-sm-6 col-lg-4">.col-12 .col-sm-6 .col-lg-4</div>
                 <div class="col-6 -offset-6 col-sm-6 -offset-sm-0 col-lg-3 -offset-lg-3">.col-6 .-offset-6 .col-sm-6 .-offset-sm-0 .col-lg-2 .-offset-lg-4</div>
                 <div class="col-12 col-lg-2">.col-12 .col-lg-2</div>
+              </div>
+
+      h2 Push
+      .DOCS_example
+        strong .row
+        .row
+          .col
+            .DOCS_grid-info-box .col
+          .col.-push-2
+            .DOCS_grid-info-box .col.-push-2
+          .col
+            .DOCS_grid-info-box .col
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row">
+                <div class="col">.col</div>
+                <div class="col -push-2">.col.-push-2</div>
+                <div class="col">.col</div>
+              </div>
+      h3 Responsive push
+      .DOCS_example
+        .row
+          .col
+            .DOCS_grid-info-box .col
+          .col.-push-sm-4.-push-lg-0
+            .DOCS_grid-info-box .col.-push-sm-4.-push-lg-0
+          .col.-push-lg-6
+            .DOCS_grid-info-box .col.-push-lg-6
+      .DOCS_code
+        pre
+          code
+            :escape-html
+              <div class="row">
+                <div class="col">.col</div>
+                <div class="col -push-sm-4 -push-lg-0">.col.-push-sm-4.-push-lg-0</div>
+                <div class="col -push-lg-6">.col.-push-lg-6</div>
               </div>
 
       h2 Vertical transformation
