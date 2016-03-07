@@ -1,9 +1,9 @@
-.container 
+.container
   width: $container-width
   max-width: $container-max-width
   margin: 0 auto
 
-.row , [class*='row-'] 
+.row , [class*='row-']
   display: flex
   flex-wrap: wrap
   margin: (-$gutter-width / 2) 0 ($gutter-width / 2) (-$gutter-width / 2)
@@ -26,11 +26,14 @@
   &.-hor-align-between
     justify-content: space-between
 
+  &.-reverse
+    flex-direction: row-reverse
+
 .row.-fullheight, [class*='row-'].-fullheight
   > .col, [class*='col-']
     display: flex
 
-.col, [class*='col-'] 
+.col, [class*='col-']
   flex: 1
   padding: ($gutter-width / 2) 0 0 ($gutter-width / 2)
 
@@ -73,7 +76,7 @@
       margin-left: $i * 100% / $columns
   .row > .-offset-lg-0
     margin-left: 0
-    
+
 // Push
 @for $i from 1 through $columns
   .row > .-push-#{$i}
@@ -116,16 +119,16 @@
   @for $i from 1 through $columns
     .row > .col-sm-#{$i}, [class*='row-'] > .col-sm-#{$i}
       width: ($i * 100% / $columns)
-  .row > [class*='col-sm-'], [class*='row-'] > [class*='col-sm-'] 
+  .row > [class*='col-sm-'], [class*='row-'] > [class*='col-sm-']
     flex: none
   .row > .col-sm-auto, [class*='row-'] > .col-sm-auto
     flex: 1
-  
+
 @media (min-width: $breakpoint-large)
   @for $i from 1 through $columns
     .row > .col-lg-#{$i}, [class*='row-'] > .col-lg-#{$i}
       width: ($i * 100% / $columns)
-  .row > [class*='col-lg-'], [class*='row-'] > [class*='col-lg-'] 
+  .row > [class*='col-lg-'], [class*='row-'] > [class*='col-lg-']
     flex: none
   .row > .col-lg-auto, [class*='row-'] > .col-lg-auto
     flex: 1
@@ -155,4 +158,3 @@
     display: none !important
   .col.-lg-visible, [class*='col-'].-lg-visible
     display: flex !important
-
